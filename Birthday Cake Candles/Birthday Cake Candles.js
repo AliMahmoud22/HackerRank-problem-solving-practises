@@ -1,12 +1,8 @@
 function birthdayCakeCandles(candles) {
   let max = Math.max.apply(null, candles);
-  console.log(max);
   let max_counts = 0;
   candles.reduce(function (total, value, index, array) {
-    console.log(value);
-    if (value == max) {
-      max_counts++;
-    }
+    if (value == max) max_counts++;
   }, 0);
   return max_counts;
 }
