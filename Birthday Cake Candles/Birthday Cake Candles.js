@@ -7,5 +7,5 @@ function birthdayCakeCandles(candles) {
   return max_counts;
 }
 
-const array = [3, 1, 2, 3, 3];
-console.log(birthdayCakeCandles(array)); // result should be 3.
+const array = [3, 1, 2, 3, 3, 3];
+console.log(birthdayCakeCandles(array)); // result should be 4.
