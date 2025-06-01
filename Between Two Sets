@@ -1,0 +1,16 @@
+function getTotalX(a, b) {
+   let final=[]
+   let checkA=[]
+   let checkB=[]
+   for(let x=a[a.length-1] ; x<=100 ; x+=a[a.length-1]){
+    checkA= a.map(el => x%el === 0 )
+    if(!checkA.includes(false))
+    {
+    checkB = b.map( el=> el%x===0? true: false )
+    
+    if( !checkB.includes(false) ) final.push(x)
+    }
+    
+   }
+return final.length
+}
